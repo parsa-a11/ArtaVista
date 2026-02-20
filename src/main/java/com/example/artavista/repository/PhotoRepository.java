@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public class PhotoRepository extends JpaRepository<Photo, Integer> {
+public interface PhotoRepository extends JpaRepository<Photo, Integer> {
 
     List<Photo> findAllByDisableDateIsNull();
 }
