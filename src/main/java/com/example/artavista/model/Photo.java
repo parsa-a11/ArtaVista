@@ -4,17 +4,17 @@ import jakarta.persistence.Entity;
 
 @Entity
 public class Photo extends BaseEntity{
-    private String title;
+    private String name;
     private String description;
     private int price;
     private byte[] image;
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
